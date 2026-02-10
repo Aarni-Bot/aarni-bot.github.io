@@ -44,7 +44,42 @@ body {
     font-family: var(--body-font-family);
 }
 
+#kirjautumis_lomake {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
 
+#kirjautumis_lomake input[type="text"] {
+    background: rgba(255, 255, 255, 0.9);
+    border: 2px solid var(--custom-btn-bg-color);
+    border-radius: var(--border-radius-large);
+    color: var(--dark-color);
+    padding: 8px 15px;
+    font-size: 14px;
+    min-width: 150px;
+}
+
+#kirjautumis_lomake input[type="text"]:disabled {
+    background: rgba(255, 255, 255, 0.6);
+    cursor: not-allowed;
+}
+
+#kirjautumis_lomake input[type="submit"] {
+    background: var(--custom-btn-bg-color);
+    border: 2px solid transparent;
+    border-radius: var(--border-radius-large);
+    color: var(--white-color);
+    font-size: 14px;
+    font-weight: var(--font-weight-bold);
+    padding: 8px 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+#kirjautumis_lomake input[type="submit"]:hover {
+    background: var(--custom-btn-bg-hover-color);
+}
 /*---------------------------------------
   TYPOGRAPHY               
 -----------------------------------------*/
